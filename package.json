@@ -14,7 +14,9 @@
     "lint": "eslint \"./**/*.js\" \"./**/*.jsx\"",
     "start": "yarn deploy && parcel src/index.html",
     "dev:start": "env-cmd -f ./neardev/dev-account.env parcel src/index.html",
-    "test": "yarn build:contract:debug && asp && jest"
+    "test": "yarn build:contract:debug && asp && jest",
+    "predeploy": "npm run build",
+    "deploypg": "gh-pages -d build"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
