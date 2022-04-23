@@ -55070,7 +55070,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var Messages = function (_a) {
   var messages = _a.messages;
-  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h2", null, "Messages"), messages.map(function (message, i) {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h2", null, "Messages"), messages.reverse().map(function (message, i) {
     return _react.default.createElement("p", {
       key: i,
       className: message.premium ? "is-premium" : ""
@@ -55542,7 +55542,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58147" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54251" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
