@@ -9,7 +9,7 @@ const Messages: React.FC<MessagesProps> = ({ messages }) => {
   return (
     <>
       <h2>Messages</h2>
-      {messages.map((message, i) => (
+      {messages.reverse().map((message, i) => (
         <p key={i} className={message.premium ? "is-premium" : ""}>
           <strong>{message.sender}</strong>:<br />
           {message.text}
